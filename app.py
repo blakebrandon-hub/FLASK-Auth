@@ -7,7 +7,7 @@ from forms import *
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "secret"
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///C:\\Users\\18313\\Desktop\\database.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "path-to-database-uri"
 Bootstrap(app)
 db = SQLAlchemy(app)
 login_manager = LoginManager()
